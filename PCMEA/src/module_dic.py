@@ -1053,50 +1053,6 @@ def S_UCL_U(emb, target_emb, train_links, device,norm=True, inversion=False):
 
     return loss_out
 
-## TODO: Test code
-# import os
-# os.environ['CUDA_VISIBLE_DEVICES'] = '5'
-# device = 'cuda'
 
-# x1 = torch.rand(1000, 100).to(device)
-# # t_model = AdapterMLP(100, 10, 0.1, init_option = "lora", adapter_layernorm_option="learnable_scalar").to(device)
-# t_model = LT_MSHA(100, 0.1).to(device)
-# y = t_model(x1)
-# print(y.shape)
-
-# t_model = CrossAndSelfAttention(100,0.1).to(device)
-# x2 = torch.rand(1000, 600).to(device)
-# y = t_model(x1,x2)
-# print(y.shape) # torch.Size([1000, 100])
-#  # about 1800M GPU use
-
-# x1 = torch.rand(1000, 100).to(device)
-# x2 = torch.randint(0, 2, [1000]).to(device)
-# loss = triple_loss(x1, x2)
-# print(loss)
-
-# x1 = torch.rand(27000, 100).to(device)
-# x2 = torch.rand(27000, 100).to(device)
-# t_model = CLUB(100, 100, 10).to(device)
-# loss = t_model(x1, x2)
-# print(loss)
-
-# x1 = torch.rand(27000, 800).to(device)
-# x2 = torch.rand(27000, 800).to(device)
-# model = DJSLoss().to(device)
-# loss = model(T=x1, T_prime=x2)
-# print(loss)
-
-# x1 = torch.rand(1000, 100)
-# ma = simility_cal(x1)
-# print(ma.shape)
-
-# import numpy as np
-# ll = [[1,5],[2,6],[3,7],[4,8]]
-# ll_n = np.array(ll)
-# emb = torch.rand(8, 100)
-# k=3
-# l = list_rebul_sort(ll_n, emb, k)
-# print(l)
 
 
