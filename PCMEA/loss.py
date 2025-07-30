@@ -1,12 +1,9 @@
 import torch
 from torch import nn
 
-try:
-    from models import *
-    from utils import *
-except:
-    from src.models import *
-    from src.utils import *
+
+from src.PCMEA import *
+from src.utils import *
 
 
 class CustomMultiLossLayer(nn.Module):

@@ -1,5 +1,5 @@
 
-CUDA_VISIBLE_DEVICES=$1 python3 src/run_PCMEA.py \
+CUDA_VISIBLE_DEVICES=$1 python run_PCMEA.py \
     --file_dir data/mmkb-datasets/$3 \
     --rate $4 \
     --lr .0005 \
